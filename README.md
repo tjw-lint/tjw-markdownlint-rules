@@ -27,3 +27,14 @@ Will be fixed by: [#150](https://github.com/DavidAnson/markdownlint/issues/150)
 ```md
 _This should be flagged for using an underscore instead of asterisk for emphasis_
 ```
+
+**Trailing whitespace not caught in unordered list empty line:**
+
+[#216](https://github.com/DavidAnson/markdownlint/issues/216)
+
+```md
+* asdf
+  * There are two spaces on the next line
+  
+  * The line above this should be flagged for trailing whitespace
+```
