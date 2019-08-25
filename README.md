@@ -10,6 +10,8 @@ The Jared Wilcurt's very agressive Markdown Linting rules for obsessives
 
 **Improper indentation not flagged:**
 
+May be covered by: [#138](https://github.com/DavidAnson/markdownlint/issues/138)
+
 ```md
 1. Text
 
@@ -19,6 +21,8 @@ The Jared Wilcurt's very agressive Markdown Linting rules for obsessives
 ```
 
 **Unable to enforce emphasis consistency:**
+
+Will be fixed by: [#150](https://github.com/DavidAnson/markdownlint/issues/150)
 
 ```md
 _This should be flagged for using an underscore instead of asterisk for emphasis_
