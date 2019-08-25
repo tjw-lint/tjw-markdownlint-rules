@@ -33,7 +33,7 @@ _This should be flagged for using an underscore instead of asterisk for emphasis
 [#216](https://github.com/DavidAnson/markdownlint/issues/216)
 
 ```md
-* asdf
+* Example
   * There are two spaces on the next line
   
   * The line above this should be flagged for trailing whitespace
