@@ -58,8 +58,10 @@ let expectedResults = [
   './test-files/md005.md: 2: MD005/list-indent Inconsistent indentation for list items at the same level [Expected: 0; Actual: 1]',
 
   './test-files/md006.md: 1: MD006/ul-start-left Consider starting bulleted lists at the beginning of the line [Expected: 0; Actual: 2]',
+  './test-files/md006.md: 1: MD007/ul-indent Unordered list indentation [Expected: 4; Actual: 2]',
 
-  './test-files/md007.md: 2: MD007/ul-indent Unordered list indentation [Expected: 2; Actual: 4]',
+  './test-files/md007.md: 2: MD007/ul-indent Unordered list indentation [Expected: 4; Actual: 2]',
+  './test-files/md007.md: 5: MD007/ul-indent Unordered list indentation [Expected: 4; Actual: 3]',
 
   './test-files/md009.md: 1: MD009/no-trailing-spaces Trailing spaces [Expected: 0 or 2; Actual: 1]',
   './test-files/md009.md: 3: MD009/no-trailing-spaces Trailing spaces [Expected: 0 or 2; Actual: 3]',
