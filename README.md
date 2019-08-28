@@ -3,22 +3,24 @@
 The Jared Wilcurt's very agressive Markdown Linting rules for obsessives.
 
 
-## How to use this:
+## How to use this
 
 1. Create a file called `.markdown-lint.yml` and set it up like so:
+
    ```yml
    ---
    extends: ./node_modules/tjw-markdown-lint-rules/tjwmarkdownlint.yml
-   # Override the proper-names rule to enforce capitalization of your project's name and other proper nouns 
+   # Override the proper-names rule to enforce capitalization of your project's name and other proper nouns
    proper-names:
      names:
        - JavaScript
        - Your Project Name
    ```
+
 1. Put the `.markdown-lint.yml` file in your project root (next to `package.json`)
 1. `npm install --save-dev markdownlint-cli tjw-markdownlint-rules`
 1. In the `"scripts":` section of your `package.json` add in these two lines:
-    * `"markdown-lint": "markdownlint -i ./node_modules/**/* --config ./.markdownlint.yml ./**/*.md"`
+    * `"markdown-lint": "markdownlint -i ./node_modules/**/* --config ./.markdown-lint.yml ./**/*.md"`
         * **Note:** You can change the `./**/*.md` to be specific to your project's folder structure. Example: `docs/**/*.md`
 1. `npm run markdown-lint` - This will list the lines of each file that are in violation of the linting rules for you to manually correct.
 
@@ -32,7 +34,7 @@ The Jared Wilcurt's very agressive Markdown Linting rules for obsessives.
     * [MarkdownLint Rule Documentation](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md)
 
 
-## Known issues:
+## Known issues
 
 **Improper indentation not flagged:**
 
@@ -61,6 +63,6 @@ _This should be flagged for using an underscore instead of asterisk for emphasis
 ```md
 * Example
   * There are two spaces on the next line
-  
+
   * The line above this should be flagged for trailing whitespace
 ```
