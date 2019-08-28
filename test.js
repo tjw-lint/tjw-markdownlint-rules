@@ -135,7 +135,8 @@ let expectedResults = [
   './test-files/md035.md: 19: MD035/hr-style Horizontal rule style [Expected: * * *; Actual: ****]',
   './test-files/md035.md: 23: MD035/hr-style Horizontal rule style [Expected: * * *; Actual: * * * *]',
 
-  './test-files/md037.md: 3: MD037/no-space-in-emphasis Spaces inside emphasis markers [Context: "** no-space-in-emphasis: **"]',
+  './test-files/md037.md: 3: MD037/no-space-in-emphasis Spaces inside emphasis markers [Context: "* em *"]',
+  './test-files/md037.md: 5: MD037/no-space-in-emphasis Spaces inside emphasis markers [Context: "** strong **"]',
 
   './test-files/md038.md: 1: MD038/no-space-in-code Spaces inside code span elements [Context: "` code span `"]',
   './test-files/md038.md: 3: MD038/no-space-in-code Spaces inside code span elements [Context: "` true`"]',
