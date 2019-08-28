@@ -6,7 +6,7 @@
   "scripts": {
     "validate": "npm run lint && npm test",
     "test": "node test.js",
-    "lint": "markdownlint -i ./node_modules/**/* --config ./tjwmarkdownlint.yml README.md"
+    "lint": "markdownlint -i './node_modules/**/*' --config ./tjwmarkdownlint.yml README.md"
   },
   "repository": {
     "type": "git",

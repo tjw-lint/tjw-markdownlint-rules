@@ -23,7 +23,7 @@
 1. Put the `.markdown-lint.yml` file in your project root (next to `package.json`)
 1. `npm install --save-dev markdownlint-cli tjw-markdownlint-rules`
 1. In the `"scripts":` section of your `package.json` add in these two lines:
-    * `"markdown-lint": "markdownlint -i ./node_modules/**/* --config ./.markdown-lint.yml ./**/*.md"`
+    * `"markdown-lint": "markdownlint -i './node_modules/**/*' --config ./.markdown-lint.yml ./**/*.md"`
         * **Note:** You can change the `./**/*.md` to be specific to your project's folder structure. Example: `docs/**/*.md`
 1. `npm run markdown-lint` - This will list the lines of each file that are in violation of the linting rules for you to manually correct.
 
