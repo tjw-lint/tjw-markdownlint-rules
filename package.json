@@ -1,0 +1,31 @@
+{
+  "name": "tjw-markdownlint-rules",
+  "version": "1.0.0",
+  "description": "The Jared Wilcurt's Markdown linting rules",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "lint": "markdownlint -i ./node_modules/**/* --config ./tjwmarkdownlint.yml README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheJaredWilcurt/tjw-markdownlint-rules.git"
+  },
+  "keywords": [
+    "markdown",
+    "lint",
+    "markdownlint",
+    "linting",
+    "rules",
+    "md"
+  ],
+  "author": "The Jared Wilcurt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheJaredWilcurt/tjw-markdownlint-rules/issues"
+  },
+  "homepage": "https://github.com/TheJaredWilcurt/tjw-markdownlint-rules#readme",
+  "devDependencies": {
+    "markdownlint-cli": "^0.18.0"
+  }
+}
