@@ -26,7 +26,7 @@ ul-indent:
 # MD009 - Trailing spaces
 no-trailing-spaces:
   br_spaces: 2
-  list_item_empty_lines: 0
+  list_item_empty_lines: false
 
 # MD010 - Hard tabs
 no-hard-tabs: true
@@ -66,7 +66,6 @@ heading-start-left: true
 # MD024 - Multiple headings with the same content
 no-duplicate-heading:
   siblings_only: true
-  allow_different_nesting: false
 
 # MD025 - Multiple top level headings in the same document
 single-h1: true
@@ -132,7 +131,7 @@ first-line-h1: false
 no-empty-links: true
 
 # MD043 - Required heading structure
-required-headings: true
+required-headings: null
 
 # MD044 - Proper names should have the correct capitalization
 proper-names:
