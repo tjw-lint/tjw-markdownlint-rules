@@ -1,6 +1,6 @@
 {
   "name": "tjw-markdownlint-rules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The Jared Wilcurt's Markdown linting rules",
   "main": "index.js",
   "scripts": {
