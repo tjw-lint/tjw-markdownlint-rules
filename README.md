@@ -43,7 +43,7 @@
 
 May be covered by: [#138](https://github.com/DavidAnson/markdownlint/issues/138)
 
-```md
+```markdown
 1. Text
 
     ![This should be flagged for starting with 4 spaces instead of 2](file.png)
@@ -55,7 +55,7 @@ May be covered by: [#138](https://github.com/DavidAnson/markdownlint/issues/138)
 
 Will be fixed by: [#150](https://github.com/DavidAnson/markdownlint/issues/150)
 
-```md
+```markdown
 _This should be flagged for using an underscore instead of asterisk for emphasis_
 ```
 
@@ -63,9 +63,49 @@ _This should be flagged for using an underscore instead of asterisk for emphasis
 
 [#216](https://github.com/DavidAnson/markdownlint/issues/216)
 
-```md
+```markdown
 * Example
   * There are two spaces on the next line
 
   * The line above this should be flagged for trailing whitespace
+```
+
+* * *
+
+## Unfixible issues
+
+**Random indentation forced by CommonMark for sublists**
+
+The complete morons over at CommonMark, have decided to incorrectly parse list items because "[reasons](https://spec.commonmark.org/0.29/#motivation)" (read: opinions, of which, that are the type of "bad").
+
+```markdown
+1. Top level ordered list
+
+  * Sublist with 2 space indentation
+  * CommonMark only parses this as a sublist if it starts with 3 spaces.
+```
+
+```markdown
+25. Top level ordered list
+
+  * Sublist with 2 space indentation
+  * CommonMark only parses this as a sublist if it starts with 4 spaces.
+```
+
+```markdown
+116. Top level ordered list
+
+  * Sublist with 2 space indentation
+  * CommonMark only parses this as a sublist if it starts with 5 spaces.
+```
+
+Since MarkdownLint relies on [markdown-it](https://markdown-it.github.io), which is built on top of the horrible "CommonMark" version of markdown, you are stuck with this shitty bullshit. I have enabled the MD006 to catch this if your code uses shitty CommonMark to be processed to HTML. However if you use a *good* markdown interpreter, then you should turn MD006 off, because it will try to make you over-indent to satisfy MarkdownLint's internal interpretter (markdown-it).
+
+To disable it, add this to your `.markdownlint.yml`:
+
+```yml
+# MD006 - Consider starting bulleted lists at the beginning of the line.
+# Thankfully, we do not use CommonMark. Unfortunately MarkdownLint does,
+# so we have to disable this so it doesn't freak out about bullets inside numbered lists.
+ul-start-left: false
 ```
