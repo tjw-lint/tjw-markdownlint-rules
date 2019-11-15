@@ -1,6 +1,6 @@
 # TJW-MarkdownLint-Rules
 
-[![Build Status](https://travis-ci.org/TheJaredWilcurt/tjw-markdownlint-rules.svg?branch=master)](https://travis-ci.org/TheJaredWilcurt/tjw-markdownlint-rules)
+[![Build Status](https://travis-ci.org/tjw-lint/tjw-markdownlint-rules.svg?branch=master)](https://travis-ci.org/tjw-lint/tjw-markdownlint-rules)
 
 
 ***The Jared Wilcurt's very agressive Markdown Linting rules for obsessives.***
