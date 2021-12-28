@@ -55,10 +55,11 @@ let expectedResults = [
   './test-files/md004.md:4 MD004/ul-style Unordered list style [Expected: asterisk; Actual: plus]',
   './test-files/md004.md:5 MD004/ul-style Unordered list style [Expected: asterisk; Actual: plus]',
 
-  './test-files/md005.md:2 MD005/list-indent Inconsistent indentation for list items at the same level [Expected: 0; Actual: 1]',
+  './test-files/md005.md:3 MD005/list-indent Inconsistent indentation for list items at the same level [Expected: 4; Actual: 5]',
+  './test-files/md005.md:3 MD007/ul-indent Unordered list indentation [Expected: 4; Actual: 5]',
 
   './test-files/md006.md:1 MD006/ul-start-left Consider starting bulleted lists at the beginning of the line [Expected: 0; Actual: 2]',
-  './test-files/md006.md:1 MD007/ul-indent Unordered list indentation [Expected: 4; Actual: 2]',
+  './test-files/md006.md:1 MD007/ul-indent Unordered list indentation [Expected: 0; Actual: 2]',
 
   './test-files/md007.md:2 MD007/ul-indent Unordered list indentation [Expected: 4; Actual: 2]',
   './test-files/md007.md:5 MD007/ul-indent Unordered list indentation [Expected: 4; Actual: 3]',
