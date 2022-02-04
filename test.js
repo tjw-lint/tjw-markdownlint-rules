@@ -142,7 +142,6 @@ let expectedResults = [
   './test-files/md037.md:5:9 MD037/no-space-in-emphasis Spaces inside emphasis markers [Context: "** strong **"]',
   './test-files/md037.md:7:9 MD037/no-space-in-emphasis Spaces inside emphasis markers [Context: "*** em and strong ***"]',
 
-  './test-files/md038.md:1:15 MD038/no-space-in-code Spaces inside code span elements [Context: "` code span `"]',
   './test-files/md038.md:3:19 MD038/no-space-in-code Spaces inside code span elements [Context: "` true`"]',
   './test-files/md038.md:5:19 MD038/no-space-in-code Spaces inside code span elements [Context: "`true `"]',
 
