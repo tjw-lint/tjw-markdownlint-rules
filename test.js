@@ -167,6 +167,8 @@ let expectedResults = [
   './test-files/md048.md:8 MD048/code-fence-style Code fence style [Expected: backtick; Actual: tilde]',
 
   './test-files/md049.md:5 MD049/emphasis-style Emphasis style should be consistent [Expected: backtick; Actual: underscore]',
+
+  './test-files/md050.md:5 MD050/strong-style Strong style should be consistent [Expected: backtick; Actual: underscore]'
 ];
 
 if (JSON.stringify(results) !== JSON.stringify(expectedResults)) {

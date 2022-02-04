@@ -156,3 +156,7 @@ code-fence-style:
 # MD049 - Emphasis style should be consistent
 emphasis-style:
   style: asterisk
+
+# MD050 - Strong style should be consistent
+strong-style:
+  style: asterisk
