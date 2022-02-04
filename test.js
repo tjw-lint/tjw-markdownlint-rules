@@ -22,6 +22,7 @@ let args = [
   '-c', './tjwmarkdownlint.yml',
   // files to test
   './test-files/*.md'
+  // './test-files/md025.md'
 ];
 
 
