@@ -22,7 +22,6 @@ let args = [
   '-c', './tjwmarkdownlint.yml',
   // files to test
   './test-files/*.md'
-  // './test-files/md025.md'
 ];
 
 
@@ -165,7 +164,9 @@ let expectedResults = [
 
   './test-files/md047.md:3:29 MD047/single-trailing-newline Files should end with a single newline character',
 
-  './test-files/md048.md:8 MD048/code-fence-style Code fence style [Expected: backtick; Actual: tilde]'
+  './test-files/md048.md:8 MD048/code-fence-style Code fence style [Expected: backtick; Actual: tilde]',
+
+  './test-files/md049.md:5 MD049/emphasis-style Emphasis style should be consistent [Expected: backtick; Actual: underscore]',
 ];
 
 if (JSON.stringify(results) !== JSON.stringify(expectedResults)) {

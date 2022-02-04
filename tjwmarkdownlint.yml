@@ -152,3 +152,7 @@ single-trailing-newline: true
 # MD048 - Code fence style
 code-fence-style:
   style: backtick
+
+# MD049 - Emphasis style should be consistent
+emphasis-style:
+  style: asterisk
