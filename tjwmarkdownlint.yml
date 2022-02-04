@@ -148,3 +148,7 @@ code-block-style:
 
 # MD047 - Files should end with a single newline character
 single-trailing-newline: true
+
+# MD048 - Code fence style
+code-fence-style:
+  style: backtick

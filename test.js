@@ -163,7 +163,9 @@ let expectedResults = [
 
   './test-files/md046.md:3 MD046/code-block-style Code block style [Expected: fenced; Actual: indented]',
 
-  './test-files/md047.md:3:29 MD047/single-trailing-newline Files should end with a single newline character'
+  './test-files/md047.md:3:29 MD047/single-trailing-newline Files should end with a single newline character',
+
+  './test-files/md048.md:8 MD048/code-fence-style Code fence style [Expected: backtick; Actual: tilde]'
 ];
 
 if (JSON.stringify(results) !== JSON.stringify(expectedResults)) {
