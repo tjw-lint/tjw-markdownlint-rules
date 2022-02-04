@@ -94,7 +94,7 @@ let expectedResults = [
 
   './test-files/md024.md:10 MD024/no-duplicate-heading/no-duplicate-header Multiple headings with the same content [Context: "## no-duplicate-heading"]',
 
-  './test-files/md025.md:4 MD025/single-title/single-h1 Multiple top level headings in the same document [Context: "# single-h1: true"]',
+  './test-files/md025.md:4 MD025/single-title/single-h1 Multiple top-level headings in the same document [Context: "# single-h1: true"]',
 
   './test-files/md026.md:1:34 MD026/no-trailing-punctuation Trailing punctuation in heading [Punctuation: \':\']',
   './test-files/md026.md:4:33 MD026/no-trailing-punctuation Trailing punctuation in heading [Punctuation: \'!\']',
