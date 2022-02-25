@@ -82,7 +82,7 @@ The complete morons over at CommonMark, have decided to incorrectly parse list i
 25. Top level ordered list
 
   * Sublist with 2 space indentation
-  * CommonMark only parses this as a sublist if it starts with 4 spaces. Oh good, it's actually a variable amount of spaces. Even fucking better. I sure do love indentation that varies by single space increments. I'm really happy I use a linter to ENFORCE INCONSISTENCIES.
+  * CommonMark only parses this as a sublist if it starts with 4 spaces. Oh good, it's actually a variable amount of spaces. Even fucking better. I sure do love indentation that varies by single character increments. I'm really happy I use a linter to ENFORCE INCONSISTENCIES.
 ```
 
 ```markdown
