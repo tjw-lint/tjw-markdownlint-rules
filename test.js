@@ -169,7 +169,17 @@ let expectedResults = [
 
   './test-files/md049.md:5:9 MD049/emphasis-style Emphasis style should be consistent [Expected: asterisk; Actual: underscore]',
 
-  './test-files/md050.md:5:9 MD050/strong-style Strong style should be consistent [Expected: asterisk; Actual: underscore]'
+  './test-files/md050.md:5:9 MD050/strong-style Strong style should be consistent [Expected: asterisk; Actual: underscore]',
+
+  './test-files/md051.md:5:1 MD051/link-fragments Link fragments should be valid [Context: "[Link does not exist](#fragment)"]',
+
+  './test-files/md052.md:14:7 MD052/reference-links-images Reference links and images should use a label that is defined [Missing link or image reference definition: "content"] [Context: "[Words][content]"]',
+  './test-files/md052.md:15:12 MD052/reference-links-images Reference links and images should use a label that is defined [Missing link or image reference definition: "content"] [Context: "[content][]"]',
+  './test-files/md052.md:18:7 MD052/reference-links-images Reference links and images should use a label that is defined [Missing link or image reference definition: "picture"] [Context: "![Words][picture]"]',
+  './test-files/md052.md:19:12 MD052/reference-links-images Reference links and images should use a label that is defined [Missing link or image reference definition: "picture"] [Context: "![picture][]"]',
+
+  './test-files/md053.md:12:1 MD053/link-image-reference-definitions Link and image reference definitions should be needed [Unused link or image reference definition: "content"] [Context: "[content]: https://exampl.com/..."]',
+  './test-files/md053.md:13:1 MD053/link-image-reference-definitions Link and image reference definitions should be needed [Unused link or image reference definition: "picture"] [Context: "[picture]: https://exampl.com/..."]'
 ];
 
 if (JSON.stringify(results) !== JSON.stringify(expectedResults)) {
