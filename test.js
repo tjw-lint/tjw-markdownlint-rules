@@ -151,7 +151,8 @@ let expectedResults = [
   './test-files/md040.md:3 MD040/fenced-code-language Fenced code blocks should have a language specified [Context: "```"]',
 
   './test-files/md042.md:1:1 MD042/no-empty-links No empty links [Context: "[No empty links]()"]',
-  './test-files/md042.md:3:1 MD042/no-empty-links No empty links [Context: "[no-empty-links: true]()"]',
+  './test-files/md042.md:3:1 MD042/no-empty-links No empty links [Context: "[No empty links](#)"]',
+  './test-files/md042.md:5:1 MD051/link-fragments Link fragments should be valid [Context: "[No empty links](#example)"]',
 
   './test-files/md044.md:3:11 MD044/proper-names Proper names should have the correct capitalization [Expected: JavaScript; Actual: javascript]',
   './test-files/md044.md:5:11 MD044/proper-names Proper names should have the correct capitalization [Expected: JavaScript; Actual: javaScript]',
