@@ -148,3 +148,24 @@ code-block-style:
 
 # MD047 - Files should end with a single newline character
 single-trailing-newline: true
+
+# MD048 - Code fence style
+code-fence-style:
+  style: backtick
+
+# MD049 - Emphasis style should be consistent
+emphasis-style:
+  style: asterisk
+
+# MD050 - Strong style should be consistent
+strong-style:
+  style: asterisk
+
+# MD051 - Link fragments should be valid
+link-fragments: true
+
+# MD052 - Reference links and images should use a label that is defined
+reference-links-images: true
+
+# MD053 - Link and image reference definitions should be needed
+link-image-reference-definitions: true

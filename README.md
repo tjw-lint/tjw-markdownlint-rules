@@ -51,14 +51,6 @@ May be covered by: [#138](https://github.com/DavidAnson/markdownlint/issues/138)
 1. Test
 ```
 
-**Unable to enforce emphasis consistency:**
-
-Will be fixed by: [#150](https://github.com/DavidAnson/markdownlint/issues/150)
-
-```markdown
-_This should be flagged for using an underscore instead of asterisk for emphasis_
-```
-
 **Trailing whitespace not caught in unordered list empty line:**
 
 [#216](https://github.com/DavidAnson/markdownlint/issues/216)
@@ -66,7 +58,7 @@ _This should be flagged for using an underscore instead of asterisk for emphasis
 ```markdown
 * Example
   * There are two spaces on the next line
-
+  
   * The line above this should be flagged for trailing whitespace
 ```
 
@@ -83,24 +75,24 @@ The complete morons over at CommonMark, have decided to incorrectly parse list i
 1. Top level ordered list
 
   * Sublist with 2 space indentation
-  * CommonMark only parses this as a sublist if it starts with 3 spaces.
+  * CommonMark only parses this as a sublist if it starts with 3 spaces. You know? 3 spaces? A super normal amount of spaces for indentation that normal people who aren't fucking idiots would totally use. Yup. 3 spaces. That's the hill they are choosing to die on. Totally valid. Not fucking stupid at all.
 ```
 
 ```markdown
 25. Top level ordered list
 
   * Sublist with 2 space indentation
-  * CommonMark only parses this as a sublist if it starts with 4 spaces.
+  * CommonMark only parses this as a sublist if it starts with 4 spaces. Oh good, it's actually a variable amount of spaces. Even fucking better. I sure do love indentation that varies by single character increments. I'm really happy I use a linter to ENFORCE INCONSISTENCIES.
 ```
 
 ```markdown
 116. Top level ordered list
 
   * Sublist with 2 space indentation
-  * CommonMark only parses this as a sublist if it starts with 5 spaces.
+  * CommonMark only parses this as a sublist if it starts with 5 spaces. fuck everything
 ```
 
-Since MarkdownLint relies on [markdown-it](https://markdown-it.github.io), which is built on top of the horrible "CommonMark" version of markdown, you are stuck with this shitty bullshit. I have enabled the MD006 to catch this if your code uses shitty CommonMark to be processed to HTML. However if you use a *good* markdown interpreter, then you should turn MD006 off, because it will try to make you over-indent to satisfy MarkdownLint's internal interpretter (markdown-it).
+Since MarkdownLint relies on [markdown-it](https://markdown-it.github.io), which is built on top of the horrible "CommonMark" version of markdown, you are stuck with this shitty bullshit. I have enabled the MD006 to catch this if your code uses shitty CommonMark to be processed to HTML. However if you use a *good* markdown interpreter, then you should turn MD006 off, because it will try to make you over-indent to satisfy MarkdownLint's internal interpretter (markdown-it), and likely fuck up something else.
 
 To disable it, add this to your `.markdownlint.yml`:
 
