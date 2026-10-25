@@ -17,12 +17,15 @@ ul-style:
 list-indent: true
 
 # MD006 - Consider starting bulleted lists at the beginning of the line
-ul-start-left: true
+# DEPRECATED - Use MD007's new options instead
+# ul-start-left: true
 
 # MD007 - Unordered list indentation
 # 2 is clearly the superior choice, but sadly only 4 is GFM compatible ಠ╭╮ಠ
 ul-indent:
   indent: 4
+  start_indent: 0
+  start_indented: false
 
 # MD009 - Trailing spaces
 no-trailing-spaces:
@@ -169,3 +172,29 @@ reference-links-images: true
 
 # MD053 - Link and image reference definitions should be needed
 link-image-reference-definitions: true
+
+# MD054 - Only allow universally supported image/link format
+link-image-style:
+  autolink: false
+  collapsed: false
+  inline: true
+  full: false
+  shortcut: false
+
+# MD055 - Remove wrapping pipes from table rows, including them breaks some parsers
+# table-pipe-style: no_leading_or_trailing
+
+# MD056 - Table column count
+# table-column-count:
+
+# MD057 -
+
+
+# MD058 -
+
+
+# MD059 -
+
+
+# MD060 -
+
